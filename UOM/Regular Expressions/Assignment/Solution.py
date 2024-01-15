@@ -4,5 +4,5 @@ Sum = 0
 for line in file:
     line = line.rstrip()
     numbers = re.findall('[0-9]+', line)
-    Sum += sum(map(int, numbers))
+                 
 print(Sum)
