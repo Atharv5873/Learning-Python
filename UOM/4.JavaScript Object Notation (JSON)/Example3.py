@@ -2,13 +2,13 @@ import urllib.request, urllib.parse, urllib.error
 import json
 import ssl
 
-api_key = 'AIzaSyCMSkVsZHRT1dF0wrQw59vvteAinlQ1lVM'
+api_key = False
 
 # If you have a Google Places API key, enter it here
 # api_key = 'AIzaSy___IDByT70'
 # https://developers.google.com/maps/documentation/geocoding/intro
 
-if api_key == 'AIzaSyCMSkVsZHRT1dF0wrQw59vvteAinlQ1lVM':
+if api_key is False:
     api_key = 42
     serviceurl = 'https://maps.googleapis.com/maps/api/geocode/json?'
 else:
